@@ -1,0 +1,27 @@
+.card
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    height: 100%
+    max-width: 100%
+    border: 2px solid
+    border-image-source: linear-gradient( #E84545, #9DDFD3)
+    border-image-slice: 1
+    background-color: #FFF
+    transition: all ease 0.3s
+  
+
+    .img
+        img
+            max-width: 100%
+
+    .title
+        font-weight: bold
+        font-size: 1.2rem
+
+.card:hover
+    border: 2px solid
+    border-image-source: linear-gradient(  #9DDFD3, #E84545)
+    border-image-slice: 1
+    transform: translateY(-5px)
