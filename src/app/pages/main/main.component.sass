@@ -1,5 +1,6 @@
 .section
     display: flex
+    flex-direction: column
     width: 75%
     margin: 0 auto
     margin-top: 5%
@@ -11,6 +12,9 @@
         grid-auto-rows: 255px
         justify-items: center
         gap:20px
+        margin-top: 10%
+
+    
 
 .payments
     display: grid
@@ -22,3 +26,18 @@
     margin-top: 10%
     margin-bottom: 10%
     
+
+@media ( max-width: 1320px )
+
+    .section 
+
+
+        .grid
+            display: grid
+            grid-template-columns: 1fr 1fr
+
+
+@media ( max-width: 620px )
+    .section .grid
+        display: grid
+        grid-template-columns: 1fr 

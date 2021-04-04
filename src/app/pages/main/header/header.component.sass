@@ -33,6 +33,10 @@ header
     .buttons
         display: flex
         align-items: center
+        .selec
+            color: #FFF
+            font-size: 1.5rem
+            display: none
         a
             text-decoration: none
             color: #fff
@@ -68,5 +72,18 @@ header
             transform: translateY(-2px)
 
 
+    
 
 
+
+
+@media( max-width: 992px )
+    header
+        .container
+            .buttons
+                fa-icon
+                    display: inline
+                a
+                    display: none
+                button
+                    display: none

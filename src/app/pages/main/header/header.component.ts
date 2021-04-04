@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {  faShoppingCart, faSearch } from '@fortawesome/free-solid-svg-icons' ;
+import {  faShoppingCart, faSearch, faBars } from '@fortawesome/free-solid-svg-icons' ;
 
 
 @Component({
@@ -11,10 +11,16 @@ export class HeaderComponent implements OnInit {
 
   faShoppingCart = faShoppingCart;
   faSearch = faSearch;
+  faBars = faBars;
 
   constructor() { }
 
+  
   ngOnInit(): void {
   }
 
+  showContent() {
+    console.log("running");
+    
+  }
 }
