@@ -11,6 +11,8 @@ export class CardItemsComponent implements OnInit {
   @Input()
   item: Product;
 
+  
+
   constructor() { }
 
   ngOnInit(): void {

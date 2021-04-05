@@ -6,8 +6,8 @@
         </div>
         <div class="buttons">
             <fa-icon [icon]="faBars" (click)="showContent()" class="selec"></fa-icon>
-            <a href="#">Home</a>
-            <a href="#">Login</a>
+            <a [routerLink]="['/']">Home</a>
+            <a [routerLink]="['/login']">Login</a>
             <button>Create account</button>
             <a href="#">
                 <fa-icon [icon]="faShoppingCart"></fa-icon>

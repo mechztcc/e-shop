@@ -15,8 +15,8 @@ export class BannerComponent implements OnInit {
   faCircle = faCircle;
 
   imageObject = [{
-    image: 'assets/banner04.jpg',
-    thumbImage: 'assets/banner04.jpg',
+    image: 'assets/banner.png',
+    thumbImage: 'assets/banner.png',
     alt: 'img'
   },
   {
@@ -26,7 +26,7 @@ export class BannerComponent implements OnInit {
   }];
 
 
-  style = { width: '100%', height: '60%'}
+  style = { width: '100%', height: '70%'}
 
 
   constructor() { }
