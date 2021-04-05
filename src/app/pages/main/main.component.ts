@@ -2,6 +2,8 @@ import { PaymentCard, Product } from './../../types';
 import { Component, OnInit } from '@angular/core';
 import { DataService } from './data.service';
 
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
@@ -16,6 +18,10 @@ export class MainComponent implements OnInit {
     {url: 'assets/credit-card.png', text: 'Pay with interest-free credit card'}, 
     {url: 'assets/safe.png', text: 'Safe delivery'}
   ];
+
+  faArrowLeft = faArrowLeft;
+  faArrowRight = faArrowRight;
+
 
   constructor(private dataService: DataService) { }
 

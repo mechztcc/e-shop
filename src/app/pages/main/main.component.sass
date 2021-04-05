@@ -8,16 +8,48 @@
         display: grid
         width: 60%
         margin: 0 auto
-        grid-template-columns: 1fr 1fr 1fr 
+        grid-template-columns: 1fr 1fr 1fr
         grid-auto-rows: 255px
         justify-items: center
 
-        gap:10px
+        gap: 10px
         margin-top: 10%
 
     h5
         font-size: 17px
-    
+
+    .paginator
+        display: flex
+        width: 10%
+        margin: 0 auto
+        margin-top: 3%
+        justify-content: center
+        align-content: center
+        color: #E84545
+
+        fa-icon 
+            border: 1px solid #E84545
+            border-radius: 5px
+            padding: 5px
+            margin: 5%
+
+        fa-icon:hover
+            cursor: pointer
+            background-color: #E84545
+            color: #FFF
+
+        .pag
+            border: 1px solid #E84545
+            border-radius: 5px
+            padding: 5px   
+            margin: 5% 
+
+        .pag:hover
+            cursor: pointer    
+            background-color: #E84545
+            color: #FFF
+        
+
 
 .payments
     display: grid
@@ -28,19 +60,16 @@
     margin: 0 auto
     margin-top: 10%
     margin-bottom: 10%
-    
 
 @media ( max-width: 1320px )
 
-    .section 
-
+    .section
 
         .grid
             display: grid
             grid-template-columns: 1fr 1fr
 
-
 @media ( max-width: 620px )
     .section .grid
         display: grid
-        grid-template-columns: 1fr 
+        grid-template-columns: 1fr
