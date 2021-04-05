@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { PaymentCard } from 'src/app/types';
 
 @Component({
   selector: 'app-payment-card',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./payment-card.component.sass']
 })
 export class PaymentCardComponent implements OnInit {
+
+  @Input()
+  item: PaymentCard;
 
   constructor() { }
 

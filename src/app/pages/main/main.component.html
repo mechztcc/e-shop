@@ -3,33 +3,17 @@
 
 <div class="section">
     <app-side-selection></app-side-selection>
+    <h5>A total of {{ data.length}} products were found...</h5>
     <div class="grid">
-        <app-card-items></app-card-items>
-        <app-card-items></app-card-items>
-        <app-card-items></app-card-items>
-        <app-card-items></app-card-items>
-        <app-card-items></app-card-items>
-        <app-card-items></app-card-items>
-        <app-card-items></app-card-items>
-        <app-card-items></app-card-items>
-        <app-card-items></app-card-items>
-        <app-card-items></app-card-items>
-        <app-card-items></app-card-items>
-        <app-card-items></app-card-items>
-        <app-card-items></app-card-items>
-        <app-card-items></app-card-items>
-        <app-card-items></app-card-items>
-        <app-card-items></app-card-items>
-        <app-card-items></app-card-items>
+        <app-card-items *ngFor="let item of data" [item]="item"></app-card-items>
     </div>
 
 </div>
 
 
 <div class="payments">
-    <app-payment-card></app-payment-card>
-    <app-payment-card></app-payment-card>
-    <app-payment-card></app-payment-card>
+    <app-payment-card *ngFor="let item of paymentCard" [item]="item"></app-payment-card>
+  
 </div>
 
 <app-footer></app-footer>

@@ -1,11 +1,11 @@
 <div class="card">
     <div class="img">
-        <img src="assets/fone02.png" alt="">
+        <img src="{{ item.url }}" alt="">
     </div>
     <div class="content">
        <div class="title">
-        <h4>Smartphone A 31</h4>
-        <span>R$ 1.099</span>
+        <h5>{{ item.name }}</h5>
+        <span>{{ item.price | currency: 'BRL' }}</span>
        </div>
         <button>Buy</button>
     </div>
