@@ -20,8 +20,8 @@ export class BannerComponent implements OnInit {
     alt: 'img'
   },
   {
-    image: 'assets/banner02.jpg',
-    thumbImage: 'assets/banner02.jpg',
+    image: 'assets/banner.png',
+    thumbImage: 'assets/banner.png',
     alt: 'img'
   }];
 

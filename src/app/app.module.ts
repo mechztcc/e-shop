@@ -13,6 +13,8 @@ import { BannerComponent } from './pages/main/banner/banner.component';
 import { SideSelectionComponent } from './pages/main/side-selection/side-selection.component';
 import {  NgImageSliderModule } from 'ng-image-slider';
 import { LoginComponent } from './pages/login/login.component';
+import { CartComponent } from './pages/cart/cart.component';
+import { EmptyComponent } from './pages/cart/empty/empty.component';
 
 
 @NgModule({
@@ -26,6 +28,8 @@ import { LoginComponent } from './pages/login/login.component';
     BannerComponent,
     SideSelectionComponent,
     LoginComponent,
+    CartComponent,
+    EmptyComponent,
 
   ],
   imports: [
