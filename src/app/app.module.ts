@@ -15,6 +15,7 @@ import {  NgImageSliderModule } from 'ng-image-slider';
 import { LoginComponent } from './pages/login/login.component';
 import { CartComponent } from './pages/cart/cart.component';
 import { EmptyComponent } from './pages/cart/empty/empty.component';
+import { CartItemComponent } from './pages/cart/cart-item/cart-item.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { EmptyComponent } from './pages/cart/empty/empty.component';
     LoginComponent,
     CartComponent,
     EmptyComponent,
+    CartItemComponent,
 
   ],
   imports: [

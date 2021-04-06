@@ -7,6 +7,9 @@
         <h5>{{ item.name }}</h5>
         <span>{{ item.price | currency: 'BRL' }}</span>
        </div>
-        <button>Buy</button>
+        <button>
+            Add to 
+            <fa-icon [icon]="faShoppingCart"></fa-icon>
+        </button>
     </div>
 </div>
