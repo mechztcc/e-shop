@@ -1,4 +1,4 @@
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { faShoppingCart, faSearchPlus } from '@fortawesome/free-solid-svg-icons';
 import { Product } from './../../../types';
 import { Component, Input, OnInit } from '@angular/core';
 
@@ -12,6 +12,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class CardItemsComponent implements OnInit {
 
   faShoppingCart = faShoppingCart;
+  faSearchPlus = faSearchPlus;
 
   @Input()
   item: Product;
