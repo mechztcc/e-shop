@@ -1,4 +1,9 @@
 <div class="container">
    <app-empty *ngIf="items.length == 0"></app-empty>
     <app-cart-item *ngFor="let item of items" [item]="item"></app-cart-item>
+    <app-total *ngIf="items.length != 0"></app-total>
+    <button (click)="add()">add</button>
+    <button (click)="remove()">remove</button>
+
+    {{ (count$ | async).name }}
 </div>

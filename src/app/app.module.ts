@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { StoreModule } from '@ngrx/store';
 
+import { counterReducer } from './pages/cart/ngrx';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './pages/main/main.component';
@@ -16,6 +18,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { CartComponent } from './pages/cart/cart.component';
 import { EmptyComponent } from './pages/cart/empty/empty.component';
 import { CartItemComponent } from './pages/cart/cart-item/cart-item.component';
+import { TotalComponent } from './pages/cart/total/total.component';
 
 
 @NgModule({
@@ -32,13 +35,15 @@ import { CartItemComponent } from './pages/cart/cart-item/cart-item.component';
     CartComponent,
     EmptyComponent,
     CartItemComponent,
+    TotalComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    NgImageSliderModule
+    NgImageSliderModule,
+    StoreModule.forRoot({count: counterReducer })
   ],
   providers: [],
   bootstrap: [AppComponent]
