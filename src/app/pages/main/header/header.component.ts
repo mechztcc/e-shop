@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import {  faShoppingCart, faSearch, faBars } from '@fortawesome/free-solid-svg-icons' ;
 
 
@@ -13,14 +14,13 @@ export class HeaderComponent implements OnInit {
   faSearch = faSearch;
   faBars = faBars;
 
-  constructor() { }
+  constructor(private route: Router) { }
 
   
   ngOnInit(): void {
   }
 
-  showContent() {
-    console.log("running");
-    
+  createPage() {
+    this.route.navigate(['/login'])
   }
 }

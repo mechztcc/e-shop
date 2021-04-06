@@ -1,9 +1,49 @@
-<!-- <div class="container">
-   <div class="box">
-       <div class="login">
-           <div class="title">Login</div>
-           <span>Hello! Lets get started</span>
-       </div>
-       <div class="create-account"></div>
-   </div>
-</div> -->
+<div class="container">
+    <div class="box">
+        <div class="login">
+            <div class="title">Login</div>
+            <span>Hello! Lets get started</span>
+            <div class="email">
+                <input type="email" placeholder="Email">
+                <fa-icon [icon]="faUser"></fa-icon>
+            </div>
+            <div class="password">
+                <input type="password" placeholder="Password">
+                <fa-icon [icon]="faUnlock"></fa-icon>
+            </div>
+            <div class="actions">
+                <a href="#">Forget password?</a>
+                <button>
+                    <fa-icon [icon]="faChevronRight"></fa-icon>
+                </button>
+            </div>
+            <div class="social-auth">
+                <img src="assets/google-icon.png" alt="google">
+                <img src="assets/facebook-icon.png" alt="facebook">
+            </div>
+        </div>
+
+        <div class="create-account">
+            <div class="title">Create Account</div>
+            <span>In the simplest way</span>
+            <div class="email">
+                <input type="email" placeholder="Email">
+                <fa-icon [icon]="faUser"></fa-icon>
+            </div>
+            <div class="password">
+                <input type="password" placeholder="Password">
+                <fa-icon [icon]="faUnlock"></fa-icon>
+            </div>
+            <div class="password">
+                <input type="password" placeholder="Password">
+                <fa-icon [icon]="faUnlock"></fa-icon>
+            </div>
+            <div class="button">
+                <button>
+                    Submit
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+

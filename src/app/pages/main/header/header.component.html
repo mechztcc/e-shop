@@ -5,10 +5,9 @@
             <fa-icon [icon]="faSearch" class="kart"></fa-icon>
         </div>
         <div class="buttons">
-            <fa-icon [icon]="faBars" (click)="showContent()" class="selec"></fa-icon>
             <a [routerLink]="['/']">Home</a>
             <a [routerLink]="['/login']">Login</a>
-            <button>Create account</button>
+            <button (click)="createPage()" >Create account</button>
             <a href="#">
                 <fa-icon [icon]="faShoppingCart"></fa-icon>
             </a>
