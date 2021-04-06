@@ -5,11 +5,7 @@ import { createReducer, on } from '@ngrx/store';
 export const add = createAction('[Add Item] Add', props<{ payload: Product }>());
 export const remove = createAction('[Remove Item] Remove', props<{ payload: Product }>());
 
-const initialState: Product = {
-    name: '',
-    price: 0,
-    url: ''
-};
+const initialState: Product[] = [];
 
 
 const _counterReducer = createReducer(
@@ -17,6 +13,7 @@ const _counterReducer = createReducer(
     on(add, (state, { payload }) => (
         {
             ...state,
+            id: payload.id,
             name: payload.name,
             price: payload.price,
             url: payload.url

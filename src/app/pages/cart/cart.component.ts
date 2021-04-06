@@ -20,25 +20,16 @@ export class CartComponent implements OnInit {
 
   items: Product[] = []
 
-  constructor(private dataService: DataService, private store: Store<{ count: number }>) { 
+  constructor(private store: Store<{ count: Product }>) { 
     this.count$ = store.select('count')
   }
 
   ngOnInit(): void {
-    this.items = this.dataService.getData();
+    this.count$.subscribe((a) => { this.items.push(a)});
 
     
     
   }
 
-  add() {
-    this.store.dispatch(add({ payload: this.items[1]}))
-
-    
-  }
-
-  remove() {
-    this.store.dispatch(remove({ payload: this.items[1]}))
-  }
 
 }

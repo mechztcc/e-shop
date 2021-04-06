@@ -8,8 +8,8 @@
         <h5>{{ item.name }}</h5>
         <span>{{ item.price | currency: 'BRL' }}</span>
        </div>
-        <button>
-            Add to 
+        <button (click)="addToCart()">
+            Add to {{ item.id }}
             <fa-icon [icon]="faShoppingCart"></fa-icon>
         </button>
     </div>

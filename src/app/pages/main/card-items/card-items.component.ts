@@ -1,6 +1,9 @@
-import { faShoppingCart, faSearchPlus } from '@fortawesome/free-solid-svg-icons';
-import { Product } from './../../../types';
+import { add } from './../../cart/ngrx';
+import { Observable } from 'rxjs';
+import { Store } from '@ngrx/store';
 import { Component, Input, OnInit } from '@angular/core';
+import { faSearchPlus, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { Product } from './../../../types';
 
 
 
@@ -17,13 +20,17 @@ export class CardItemsComponent implements OnInit {
   @Input()
   item: Product;
 
-  
+  count$: Observable<any>
 
-  constructor() { }
+  constructor(private store: Store<{ count: Product }>) { 
+    this.count$ = store.select('count')
+  }
 
-  ngOnInit(): void {
-    
+  ngOnInit(): void { 
     
   }
 
+  addToCart() {
+    this.store.dispatch(add({ payload: this.item }))
+  }
 }
