@@ -7,11 +7,21 @@
         <div class="buttons">
             <a [routerLink]="['/']">Home</a>
             <a [routerLink]="['/login']">Login</a>
-            <button (click)="createPage()" >Create account</button>
+            <button (click)="createPage()">Create account</button>
             <a [routerLink]="['/cart']">
                 <fa-icon [icon]="faShoppingCart"></fa-icon>
             </a>
+            <div class="selec">
+                <fa-icon [icon]="faBars"></fa-icon>
+            </div>
         </div>
-
+    </div>
+    <div class="drop-content">
+        <a [routerLink]="['/']">Home</a>
+        <a [routerLink]="['/login']">Login</a>
+        <button (click)="createPage()">Create account</button>
+        <a [routerLink]="['/cart']">
+            <fa-icon [icon]="faShoppingCart"></fa-icon>
+        </a>
     </div>
 </header>

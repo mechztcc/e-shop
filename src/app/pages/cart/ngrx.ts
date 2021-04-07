@@ -10,7 +10,7 @@ const initialState: Product[] = [];
 
 const _counterReducer = createReducer(
     initialState,
-    on(add, (state, { payload }) => (
+    on(add, (state , { payload }) => (
         {
             ...state,
             id: payload.id,

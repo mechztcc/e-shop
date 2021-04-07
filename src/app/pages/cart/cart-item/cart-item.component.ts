@@ -14,6 +14,8 @@ export class CartItemComponent implements OnInit {
   faPlus = faPlus;
   faTrash = faTrash;
 
+  itemAmount: number = 1;
+
   @Input()
   item: Product;
 
@@ -21,6 +23,13 @@ export class CartItemComponent implements OnInit {
 
   ngOnInit(): void {
     
+  }
+
+  increaseAmount() {
+    this.itemAmount ++;
+  }
+  decreaseAmount() {
+    this.itemAmount --;
   }
 
 }

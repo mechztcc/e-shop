@@ -1,9 +1,10 @@
 <app-banner></app-banner>
 <div class="section">
     <app-side-selection></app-side-selection>
-    <h5>A total of {{ data.length}} products were found...</h5>
+    <h5>A total of {{ PhoneData.length}} products were found...</h5>
     <div class="grid">
-        <app-card-items *ngFor="let item of data" [item]="item"></app-card-items>
+        <app-card-items *ngFor="let item of PhoneData" [item]="item"></app-card-items>
+        <app-card-items *ngFor="let item of MouseData" [item]="item"></app-card-items>
     </div>
 
     <div class="paginator">

@@ -11,7 +11,8 @@ import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 })
 export class MainComponent implements OnInit {
 
-  data: Product[] = []
+  PhoneData: Product[] = []
+  MouseData: Product[] = []
 
   paymentCard: PaymentCard[] = [
     {url: 'assets/car.png', text: 'Free shipping'},
@@ -26,7 +27,8 @@ export class MainComponent implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
-    this.data = this.dataService.getData()
+    this.PhoneData = this.dataService.getPhoneData()
+    this.MouseData = this.dataService.getMouseData()
 
     
   }

@@ -3,9 +3,9 @@
         <img src="{{ item.url }}" alt="">
     </div>
     <div class="amount">
-        <fa-icon [icon]="faMinus"></fa-icon>
-        <div class="value">1</div>
-        <fa-icon [icon]="faPlus"></fa-icon>
+        <fa-icon [icon]="faMinus" (click)="decreaseAmount()"></fa-icon>
+        <div class="value">{{ itemAmount }}</div>
+        <fa-icon [icon]="faPlus" (click)="increaseAmount()"></fa-icon>
     </div>
     <div class="content">
         <div class="title"> {{ item.name }} </div>

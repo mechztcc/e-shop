@@ -2,5 +2,5 @@
    <app-empty *ngIf="items.length == 0"></app-empty>
     <app-cart-item *ngFor="let item of items" [item]="item"></app-cart-item>
     <app-total *ngIf="items.length != 0" [items]="items"></app-total>
-    <button (click)="remove()">remove</button>
+    <!-- <button (click)="remove()">remove</button> -->
 </div>
