@@ -1,7 +1,7 @@
 import { Product } from './../../../types';
 import { Component, Input, OnInit } from '@angular/core';
 
-import { faTrash } from '@fortawesome/free-solid-svg-icons';
+import { faTrash, faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-cart-item',
@@ -10,6 +10,8 @@ import { faTrash } from '@fortawesome/free-solid-svg-icons';
 })
 export class CartItemComponent implements OnInit {
 
+  faMinus = faMinus;
+  faPlus = faPlus;
   faTrash = faTrash;
 
   @Input()

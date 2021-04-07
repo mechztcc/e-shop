@@ -2,10 +2,14 @@
     <div class="img">
         <img src="{{ item.url }}" alt="">
     </div>
+    <div class="amount">
+        <fa-icon [icon]="faMinus"></fa-icon>
+        <div class="value">1</div>
+        <fa-icon [icon]="faPlus"></fa-icon>
+    </div>
     <div class="content">
         <div class="title"> {{ item.name }} </div>
         <div class="price"> {{ item.price | currency: 'BRL' }} </div>
         <fa-icon [icon]="faTrash"></fa-icon>
-
     </div>
 </div>
