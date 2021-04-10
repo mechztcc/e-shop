@@ -25,6 +25,8 @@ import { SmartphonesComponent } from './pages/main/smartphones/smartphones.compo
 import { MousesComponent } from './pages/main/mouses/mouses.component';
 import { ItemDetailsComponent } from './pages/main/item-details/item-details.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 
 @NgModule({
@@ -48,6 +50,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     MousesComponent,
     ItemDetailsComponent,
 
+
   ],
   imports: [
     BrowserModule,
@@ -55,7 +58,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     FontAwesomeModule,
     NgImageSliderModule,
     ReactiveFormsModule,
-    StoreModule.forRoot({count: counterReducer })
+    StoreModule.forRoot({count: counterReducer }),
+    NoopAnimationsModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

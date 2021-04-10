@@ -6,7 +6,7 @@
         <a [routerLink]="['login']" routerLinkActive="active" >
             <fa-icon [icon]="faUser"></fa-icon>
         </a>
-        <a [routerLink]="['cart']" routerLinkActive="active" >
+        <a routerLinkActive="active" (click)="showSnackBar()">
             <fa-icon [icon]="faShoppingCart"></fa-icon>
         </a>
     </div>

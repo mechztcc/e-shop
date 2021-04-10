@@ -6,7 +6,7 @@
         </div>
 
         <div class="buttons">
-            <a [routerLink]="['/offers']" routerLinkActive="active" >
+            <a [routerLink]="['/offers']" routerLinkActive="active">
                 <fa-icon [icon]="faHome"></fa-icon>
                 Home
             </a>
@@ -14,7 +14,7 @@
                 <fa-icon [icon]="faUser"></fa-icon>
                 Login
             </a>
-            <a [routerLink]="['/cart']" routerLinkActive="active">
+            <a routerLinkActive="active" (click)="showSnackBar()">
                 <fa-icon [icon]="faShoppingCart"></fa-icon>
             </a>
         </div>
