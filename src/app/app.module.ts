@@ -19,6 +19,10 @@ import { CartComponent } from './pages/cart/cart.component';
 import { EmptyComponent } from './pages/cart/empty/empty.component';
 import { CartItemComponent } from './pages/cart/cart-item/cart-item.component';
 import { TotalComponent } from './pages/cart/total/total.component';
+import { GridContentComponent } from './pages/main/grid-content/grid-content.component';
+import { OffersComponent } from './pages/main/offers/offers.component';
+import { SmartphonesComponent } from './pages/main/smartphones/smartphones.component';
+import { MousesComponent } from './pages/main/mouses/mouses.component';
 
 
 @NgModule({
@@ -36,6 +40,10 @@ import { TotalComponent } from './pages/cart/total/total.component';
     EmptyComponent,
     CartItemComponent,
     TotalComponent,
+    GridContentComponent,
+    OffersComponent,
+    SmartphonesComponent,
+    MousesComponent,
 
   ],
   imports: [
