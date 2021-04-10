@@ -24,6 +24,7 @@ import { OffersComponent } from './pages/main/offers/offers.component';
 import { SmartphonesComponent } from './pages/main/smartphones/smartphones.component';
 import { MousesComponent } from './pages/main/mouses/mouses.component';
 import { ItemDetailsComponent } from './pages/main/item-details/item-details.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -53,6 +54,7 @@ import { ItemDetailsComponent } from './pages/main/item-details/item-details.com
     AppRoutingModule,
     FontAwesomeModule,
     NgImageSliderModule,
+    ReactiveFormsModule,
     StoreModule.forRoot({count: counterReducer })
   ],
   providers: [],
