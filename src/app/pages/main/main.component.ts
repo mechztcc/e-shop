@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { PaymentCard, Product } from './../../types';
 import { Component, OnInit } from '@angular/core';
 import { DataService } from './data.service';
@@ -24,11 +25,12 @@ export class MainComponent implements OnInit {
   faArrowRight = faArrowRight;
 
 
-  constructor(private dataService: DataService) { }
+  constructor(private dataService: DataService, private route: Router) { }
 
   ngOnInit(): void {
     this.PhoneData = this.dataService.getPhoneData()
     this.MouseData = this.dataService.getMouseData()
+    this.route.navigate(['/offers'])
 
     
   }
