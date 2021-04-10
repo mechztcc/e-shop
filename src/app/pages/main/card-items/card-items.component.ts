@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { add } from './../../cart/ngrx';
 import { Observable } from 'rxjs';
 import { Store } from '@ngrx/store';
@@ -22,7 +23,7 @@ export class CardItemsComponent implements OnInit {
 
   count$: Observable<any>
 
-  constructor(private store: Store<{ count: Product }>) { 
+  constructor(private store: Store<{ count: Product }>, private route: Router) { 
     this.count$ = store.select('count')
   }
 
@@ -33,4 +34,6 @@ export class CardItemsComponent implements OnInit {
   addToCart() {
     this.store.dispatch(add({ payload: this.item }))
   }
+
+
 }

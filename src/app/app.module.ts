@@ -23,6 +23,7 @@ import { GridContentComponent } from './pages/main/grid-content/grid-content.com
 import { OffersComponent } from './pages/main/offers/offers.component';
 import { SmartphonesComponent } from './pages/main/smartphones/smartphones.component';
 import { MousesComponent } from './pages/main/mouses/mouses.component';
+import { ItemDetailsComponent } from './pages/main/item-details/item-details.component';
 
 
 @NgModule({
@@ -44,6 +45,7 @@ import { MousesComponent } from './pages/main/mouses/mouses.component';
     OffersComponent,
     SmartphonesComponent,
     MousesComponent,
+    ItemDetailsComponent,
 
   ],
   imports: [
