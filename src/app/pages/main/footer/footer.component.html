@@ -1,7 +1,11 @@
 <div class="container">
     <div class="content">
-        <a [routerLink]="['']">Home</a>
-        <a [routerLink]="['login']">Login</a>
+        <a [routerLink]="['']">
+            <fa-icon [icon]="faHome"></fa-icon>
+        </a>
+        <a [routerLink]="['login']">
+            <fa-icon [icon]="faUser"></fa-icon>
+        </a>
         <a [routerLink]="['cart']">
             <fa-icon [icon]="faShoppingCart"></fa-icon>
         </a>

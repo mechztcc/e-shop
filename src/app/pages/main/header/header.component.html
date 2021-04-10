@@ -5,8 +5,14 @@
             <fa-icon [icon]="faSearch" class="kart"></fa-icon>
         </div>
         <div class="buttons">
-            <a [routerLink]="['/']">Home</a>
-            <a [routerLink]="['/login']">Login</a>
+            <a [routerLink]="['/']">
+                <fa-icon [icon]="faHome"></fa-icon>
+                Home
+            </a>
+            <a [routerLink]="['/login']">
+                <fa-icon [icon]="faUser"></fa-icon>
+                Login
+            </a>
             <a [routerLink]="['/cart']">
                 <fa-icon [icon]="faShoppingCart"></fa-icon>
             </a>
