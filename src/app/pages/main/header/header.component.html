@@ -4,16 +4,17 @@
             <input type="text" placeholder="    search...">
             <fa-icon [icon]="faSearch" class="kart"></fa-icon>
         </div>
+
         <div class="buttons">
-            <a [routerLink]="['/offers']">
+            <a [routerLink]="['/offers']" routerLinkActive="active" >
                 <fa-icon [icon]="faHome"></fa-icon>
                 Home
             </a>
-            <a [routerLink]="['/login']">
+            <a [routerLink]="['/login']" routerLinkActive="active">
                 <fa-icon [icon]="faUser"></fa-icon>
                 Login
             </a>
-            <a [routerLink]="['/cart']">
+            <a [routerLink]="['/cart']" routerLinkActive="active">
                 <fa-icon [icon]="faShoppingCart"></fa-icon>
             </a>
         </div>

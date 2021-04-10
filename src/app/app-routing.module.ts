@@ -1,4 +1,4 @@
-import { AuthGuardGuard } from './guards/auth-guard.guard';
+import { AuthGuard } from './guards/auth.guard';
 import { LoginComponent } from './pages/login/login.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -16,7 +16,7 @@ const routes: Routes = [
     { path: 'mouses', component: MousesComponent }
   ]},
   { path: 'login', component: LoginComponent },
-  { path: 'cart', component: CartComponent, canActivate: [AuthGuardGuard] }
+  { path: 'cart', component: CartComponent, canActivate: [AuthGuard] }
 ];
 
 @NgModule({

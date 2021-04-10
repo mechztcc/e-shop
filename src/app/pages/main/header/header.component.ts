@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import {  faShoppingCart, faSearch, faBars, faUser, faHome } from '@fortawesome/free-solid-svg-icons' ;
+import {  faShoppingCart, faSearch, faBars, faUser, faHome, faKaaba } from '@fortawesome/free-solid-svg-icons' ;
 
 
 @Component({
@@ -15,6 +15,7 @@ export class HeaderComponent implements OnInit {
   faBars = faBars;
   faUser = faUser;
   faHome = faHome;
+  faKaaba = faKaaba;
 
   constructor(private route: Router) { }
 
