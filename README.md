@@ -15,7 +15,7 @@
 
 <p align="center"> <img src="https://img.shields.io/badge/Angular-11.0.7-blue" ></p>
 
-<p align="center"> Para ver esse app em funcionamento: https://alberto-shop.netlify.app/offers</p>
+<p align="center"> Para ver esse app em funcionamento: https://alberto-shop.netlify.app</p>
 
 <p align="center"> <img src="https://i.postimg.cc/8kq5M6wc/e-shop.png"></p>
 
